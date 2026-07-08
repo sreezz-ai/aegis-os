@@ -1,0 +1,12 @@
+{
+  "name": "Aegis OS — Sreelesh SK",
+  "short_name": "Aegis OS",
+  "description": "Cybersecurity student & builder portfolio system.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#05070c",
+  "theme_color": "#05070c",
+  "icons": [
+    { "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}

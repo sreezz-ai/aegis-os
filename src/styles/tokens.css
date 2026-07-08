@@ -1,0 +1,49 @@
+:root {
+  --color-bg-void: #05070c;
+  --color-bg-surface: #0a0e18;
+  --color-bg-card: rgba(255, 255, 255, 0.03);
+  --color-border-soft: rgba(255, 255, 255, 0.08);
+  --color-border-strong: rgba(255, 255, 255, 0.14);
+
+  --color-primary: #6366f1;
+  --color-primary-soft: rgba(99, 102, 241, 0.15);
+  --color-accent: #22d3ee;
+  --color-accent-soft: rgba(34, 211, 238, 0.14);
+
+  --color-success: #34d399;
+  --color-warning: #fbbf24;
+  --color-danger: #f87171;
+
+  --color-text-primary: #e7ebf7;
+  --color-text-muted: #8c94ab;
+  --color-text-faint: #565f78;
+
+  --radius-lg: 20px;
+  --radius-md: 14px;
+  --radius-sm: 9px;
+
+  --font-display: "Space Grotesk", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+}
+
+/* Recruiter Mode: light, print-friendly, motion-reduced theme */
+[data-recruiter="true"] {
+  --color-bg-void: #f7f8fb;
+  --color-bg-surface: #ffffff;
+  --color-bg-card: #ffffff;
+  --color-border-soft: rgba(15, 20, 35, 0.09);
+  --color-border-strong: rgba(15, 20, 35, 0.16);
+  --color-text-primary: #10131c;
+  --color-text-muted: #565f78;
+  --color-text-faint: #8c94ab;
+  --color-primary-soft: rgba(99, 102, 241, 0.08);
+  --color-accent-soft: rgba(34, 211, 238, 0.08);
+}
+
+@media print {
+  [data-recruiter="true"] {
+    --color-bg-void: #ffffff;
+    --color-bg-surface: #ffffff;
+  }
+}
