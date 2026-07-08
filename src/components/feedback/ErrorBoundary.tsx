@@ -12,13 +12,13 @@ interface ErrorBoundaryState {
 }
 
 export class ErrorBoundary extends Component<ErrorBoundaryProps, ErrorBoundaryState> {
-  state: ErrorBoundaryState = { hasError: false, message: null };
+  override state: ErrorBoundaryState  = { hasError: false, message: null };
 
   static getDerivedStateFromError(error: Error): ErrorBoundaryState {
     return { hasError: true, message: error.message };
   }
 
-  componentDidCatch(error: Error, errorInfo: ErrorInfo): void {
+  verride componentDidCatch(error: Error, errorInfo: ErrorInfo): void {
     // In a real deployment this would report to an error-tracking service.
     console.error("AegisOS render error:", error, errorInfo);
   }
@@ -28,7 +28,7 @@ export class ErrorBoundary extends Component<ErrorBoundaryProps, ErrorBoundarySt
     window.location.assign("/");
   };
 
-  render(): ReactNode {
+  override render(): ReactNode {
     if (!this.state.hasError) return this.props.children;
 
     return (
