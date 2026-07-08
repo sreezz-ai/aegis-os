@@ -18,7 +18,7 @@ export class ErrorBoundary extends Component<ErrorBoundaryProps, ErrorBoundarySt
     return { hasError: true, message: error.message };
   }
 
-  verride componentDidCatch(error: Error, errorInfo: ErrorInfo): void {
+  override componentDidCatch(error: Error, errorInfo: ErrorInfo): void {
     // In a real deployment this would report to an error-tracking service.
     console.error("AegisOS render error:", error, errorInfo);
   }
