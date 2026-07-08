@@ -1,4 +1,4 @@
-import { FiSparkles } from "react-icons/fi";
+import { FiStar } from "react-icons/fi";
 import { SEO } from "@/components/seo/SEO";
 import { Section } from "@/components/layout/Section";
 import { PageHeader } from "@/components/layout/PageHeader";
@@ -65,7 +65,7 @@ export function AboutPage(): JSX.Element {
             <ul className="mt-1 flex flex-col gap-2.5">
               {LEARNING_NOW.map((item) => (
                 <li key={item} className="flex items-center gap-2.5 text-sm">
-                  <FiSparkles size={14} color="var(--color-accent)" aria-hidden="true" />
+                  <FiStar size={14} color="var(--color-accent)" aria-hidden="true" />
                   {item}
                 </li>
               ))}
