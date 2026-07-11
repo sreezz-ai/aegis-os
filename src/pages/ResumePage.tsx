@@ -22,9 +22,14 @@ export function ResumePage(): JSX.Element {
             <Button variant="ghost" icon={<FiPrinter size={14} />} onClick={() => window.print()}>
               Print
             </Button>
-            <Button icon={<FiDownload size={14} />} disabled title="Resume file coming in a later phase">
+            <a
+              href="/resume.pdf"
+              download
+              className="btn-primary focus-ring inline-flex items-center justify-center gap-2 rounded-xl px-5 py-2.5 text-sm font-semibold"
+            >
+              <FiDownload size={14} />
               Download PDF
-            </Button>
+            </a>
           </div>
         </div>
       </Section>
@@ -33,8 +38,8 @@ export function ResumePage(): JSX.Element {
         <Card padding="lg">
           <h2 className="font-display text-lg font-semibold">Education</h2>
           <p className="mt-2 text-sm text-text-muted">
-            BCA — Bachelor of Computer Applications (in progress). Core coursework in computer architecture,
-            networks, and programming.
+            BCA — Bachelor of Computer Applications, Cybersecurity specialization. Bengaluru City University, via
+            Sambhram Academy of Management and Studies (2021–2024). Status: Completed.
           </p>
         </Card>
       </Section>
@@ -48,7 +53,7 @@ export function ResumePage(): JSX.Element {
                 <p className="font-semibold text-text-primary">
                   {item.role} · {item.organization}
                 </p>
-                <p className="font-mono text-xs text-text-faint">{item.period}</p>
+                {item.period && <p className="font-mono text-xs text-text-faint">{item.period}</p>}
                 <ul className="mt-1.5 list-disc pl-5 text-sm text-text-muted">
                   {item.highlights.map((highlight) => (
                     <li key={highlight}>{highlight}</li>

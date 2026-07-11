@@ -9,9 +9,9 @@ import { timeline } from "@/data/timeline";
 import { SITE } from "@/constants/site";
 
 const LEARNING_NOW = [
-  "Penetration testing methodology",
-  "Cloud security fundamentals",
-  "Securing AI-integrated systems",
+  "Penetration testing & Red Team fundamentals",
+  "SOC (Security Operations Center) concepts",
+  "Advanced Linux administration (Kali)",
 ];
 
 export function AboutPage(): JSX.Element {
@@ -27,7 +27,7 @@ export function AboutPage(): JSX.Element {
         <PageHeader
           eyebrow="About"
           title="Who I am"
-          description={`I'm a cybersecurity student pursuing my BCA, based in ${SITE.location}. I care less about collecting certificates and more about understanding how systems actually fail — then building things, including AI-assisted tools, to help find and fix that failure sooner.`}
+          description={`I'm a cybersecurity-focused BCA graduate based in ${SITE.location}. I care less about collecting certificates and more about understanding how systems actually fail — then building things, including automation and AI-assisted tools, to help find and fix that failure sooner.`}
         />
       </Section>
 
@@ -35,10 +35,13 @@ export function AboutPage(): JSX.Element {
         <div className="grid gap-10 md:grid-cols-2">
           <div>
             <Eyebrow>Education</Eyebrow>
-            <h3 className="font-display text-xl font-semibold">BCA — Bachelor of Computer Applications</h3>
+            <h3 className="font-display text-xl font-semibold">
+              BCA — Bachelor of Computer Applications, Cybersecurity
+            </h3>
             <p className="mt-2.5 text-sm leading-relaxed text-text-muted">
-              Currently in progress. Core coursework in computer architecture, networks, and programming, paired
-              with self-directed study in offensive security.
+              Bengaluru City University, via Sambhram Academy of Management and Studies (2021–2024). Core coursework in
+              networking, systems, and programming, specialized toward cybersecurity, with hands-on practice
+              through platforms like TryHackMe alongside the coursework.
             </p>
           </div>
           <div>
@@ -74,8 +77,9 @@ export function AboutPage(): JSX.Element {
           <Card padding="lg">
             <Eyebrow>Career vision</Eyebrow>
             <p className="mt-1 text-sm leading-relaxed text-text-muted">
-              I&apos;m aiming for a role as a penetration tester or security engineer — and I intend to keep
-              building tools along the way, not stop once I&apos;m hired.
+              I&apos;m working toward a career in penetration testing and Red Team operations — with vulnerability
+              assessment, security research, and SOC analysis as adjacent paths I&apos;m building skills in along
+              the way. I intend to keep shipping tools, not stop once I&apos;m hired.
             </p>
           </Card>
         </div>

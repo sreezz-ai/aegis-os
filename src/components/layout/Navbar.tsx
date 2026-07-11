@@ -1,6 +1,6 @@
 import type { MouseEvent } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
-import { FiShield, FiSun, FiMonitor, FiCommand } from "react-icons/fi";
+import { FiShield, FiSun, FiMonitor, FiCommand, FiDownload } from "react-icons/fi";
 import { navItems } from "@/data/navigation";
 import { useRecruiterMode } from "@/contexts/RecruiterModeContext";
 import { useToast } from "@/contexts/ToastContext";
@@ -60,6 +60,14 @@ export function Navbar(): JSX.Element {
         </nav>
 
         <div className="flex items-center gap-2">
+          <a
+            href="/resume.pdf"
+            download
+            className="btn-ghost focus-ring hidden items-center gap-1.5 rounded-lg px-2.5 py-1.5 font-mono text-xs sm:flex"
+            aria-label="Download resume as PDF"
+          >
+            <FiDownload size={13} /> Resume
+          </a>
           <button
             onClick={openCommandPalette}
             className="btn-ghost focus-ring hidden items-center gap-1.5 rounded-lg bg-transparent px-2.5 py-1.5 font-mono text-xs sm:flex"
