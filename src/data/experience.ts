@@ -2,15 +2,28 @@ import type { Experience } from "@/types/experience";
 
 export const experience: Experience[] = [
   {
-    id: "exp-bca",
-    role: "BCA Student",
-    organization: "Bachelor of Computer Applications",
-    period: "In progress",
+    id: "exp-kvr-tata",
+    role: "Sales Executive",
+    organization: "KVR Tata Motors, Kasaragod",
+    period: "6 months",
     summary:
-      "Core coursework in computer architecture, networks, and programming, paired with self-directed study in offensive security.",
+      "Advised customers on vehicle selection, features, and financing, while coordinating with the wider sales team to keep operations running smoothly.",
     highlights: [
-      "Built a personal home lab for hands-on offensive security practice",
-      "Started shipping AI-assisted security tooling outside of coursework",
+      "Explained technical vehicle specifications and financing options clearly to customers",
+      "Built and maintained customer relationships to improve satisfaction",
+      "Generated and followed up on sales leads, maintaining accurate records",
+    ],
+  },
+  {
+    id: "exp-teleperformance",
+    role: "Outbound Sales Executive",
+    organization: "Teleperformance",
+    summary:
+      "Handled outbound customer calls in a fast-paced, target-driven environment, promoting products and resolving queries.",
+    highlights: [
+      "Achieved daily performance targets through structured outbound calling",
+      "Developed strong communication and persuasion skills under pressure",
+      "Maintained call records and handled CRM workflows",
     ],
   },
 ];

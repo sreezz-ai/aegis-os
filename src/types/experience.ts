@@ -4,7 +4,7 @@ export interface Experience {
   id: ID;
   role: string;
   organization: string;
-  period: string;
+  period?: string;
   summary: string;
   highlights: string[];
 }

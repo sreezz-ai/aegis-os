@@ -16,7 +16,9 @@ export function ExperienceCard({ experience }: ExperienceCardProps): JSX.Element
         </div>
         <FiBriefcase size={18} color="var(--color-primary)" aria-hidden="true" />
       </div>
-      <p className="mt-1.5 font-mono text-xs text-text-faint">{experience.period}</p>
+      {experience.period && (
+        <p className="mt-1.5 font-mono text-xs text-text-faint">{experience.period}</p>
+      )}
       <p className="mt-3.5 text-sm leading-relaxed text-text-muted">{experience.summary}</p>
       <ul className="mt-4 flex flex-col gap-2">
         {experience.highlights.map((highlight) => (

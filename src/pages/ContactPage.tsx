@@ -10,6 +10,7 @@ import { Textarea } from "@/components/ui/Textarea";
 import { Button } from "@/components/ui/Button";
 import { contactService } from "@/services/contactService";
 import type { ContactPayload } from "@/services/contactService";
+import { CONTACT } from "@/constants/site";
 
 type FormErrors = Partial<Record<keyof ContactPayload, string>>;
 
@@ -129,8 +130,15 @@ export function ContactPage(): JSX.Element {
                 </Button>
               </form>
             ) : (
-              <div className="rounded-lg border border-border-soft p-4 font-mono text-sm text-text-primary">
-                hello@example.com
+              <div className="flex flex-col gap-2 rounded-lg border border-border-soft p-4 font-mono text-sm text-text-primary">
+                <span>{CONTACT.email}</span>
+                <span>{CONTACT.phone}</span>
+                <a href={CONTACT.github} target="_blank" rel="noreferrer" className="focus-ring text-accent">
+                  {CONTACT.github.replace("https://", "")}
+                </a>
+                <a href={CONTACT.linkedin} target="_blank" rel="noreferrer" className="focus-ring text-accent">
+                  {CONTACT.linkedin.replace("https://", "")}
+                </a>
               </div>
             )}
           </Card>
