@@ -10,10 +10,14 @@ body,
   height: 100%;
 }
 
+html {
+  background: var(--color-bg-void, #05070c);
+}
+
 body {
-  background: var(--color-bg-void);
-  color: var(--color-text-primary);
-  font-family: var(--font-body);
+  background: var(--color-bg-void, #05070c);
+  color: var(--color-text-primary, #e7ebf7);
+  font-family: var(--font-body, sans-serif);
   overflow-x: hidden;
 }
 
