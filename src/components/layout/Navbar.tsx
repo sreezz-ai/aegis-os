@@ -8,7 +8,7 @@ import { useNavigationState } from "@/contexts/NavigationContext";
 import { ROUTES } from "@/constants/routes";
 import { SITE } from "@/constants/site";
 
-const COMING_SOON_IDS = new Set(["blog", "certificates"]);
+const COMING_SOON_IDS = new Set(["blog"]);
 
 export function Navbar(): JSX.Element {
   const { isRecruiterMode, toggleRecruiterMode } = useRecruiterMode();
